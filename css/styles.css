@@ -163,6 +163,7 @@ body {
 /**--------TOP LINE SECTION-------*/
 header {
     border-bottom: 1px solid var(--white-text-color);
+    position: relative;
 }
 
 .header .container {
@@ -249,10 +250,44 @@ header {
     margin-left: 40px;
 }
 
+/**-------MODAL WINDOW------------*/
+.modal-window {
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--text-head-line-color);
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+}
+
+.input-text {
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1.33;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal {
+    with: 400px;
+    height: 584px;
+    padding: 72px 24px 24px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%0);
+
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px;
+    border-radius: 4px;
+}
+
 /**--------HERO SECTION---------*/
   /** HERO-img container */
- .hero-img .container {
- }
 
  .hero-img {
     width: var(--page-width);
@@ -708,4 +743,54 @@ a.footer-media:hover {
     font-size: var(--header3-font-size);
     font-weight: var(--header3-font-weight);
     color: var(--title-text-color);
+}
+
+/**---------------------MODAL WINDOW PAGE-----------------*/
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 576px;
+  background: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.svg-button{
+  box-sizing: border-box;
+  position:absolute;
+  display: block;
+  top: 32px;
+  right: 32px;
+  fill: #2E2F42;
+}
+
+.modal-close {
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.overlay {     
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left:0;
+    background: rgba(46, 47, 66, 0.4);
 }

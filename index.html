@@ -44,7 +44,7 @@
         <section class="hero-img">
             <div class="container">
                 <h1 class="hero-msg">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -115,7 +115,8 @@
                             height="300">
                     </li>
 
-                    <li class="information-item">
+                    <li class="information-item">margin-right: auto;
+                        margin-left: auto;
                         <img class="information-img" src="./img/img2.jpg" alt="Cell phone with three alt screens"
                             width="360" height="300">
                     </li>
@@ -386,7 +387,16 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <div class="overlay is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" type="button" data-modal-close>
+                <svg class="svg-button" width="8" height="8">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/hero-modal.js"></script>
 </body>
 
 </html>
