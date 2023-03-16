@@ -292,6 +292,15 @@ header {
     border-radius: 4px;
 }
 
+.modal-close:hover {
+    background-color: #404BBF;
+    border-color: var(--btn-active-color);
+}
+
+.modal-close:hover .svg-button {
+    fill: #fff;
+}
+
 /**--------HERO SECTION---------*/
   /** HERO-img container */
 
