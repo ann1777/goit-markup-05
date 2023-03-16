@@ -1,5 +1,5 @@
 # goit-markup-hw-05
-#goit-markup-hw-05.
+
 ## Module 5: Positioned elements
 
 ### Add decorative effect animations to the layout pages from the homework layout #5.
@@ -19,6 +19,7 @@
 
 ### Layout requirements
 «B1» HTML markup of all layout elements is done.
+
 «B2» Tags are used according to their semantic content.
 
 ### Project design requirements
