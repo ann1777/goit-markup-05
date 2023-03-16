@@ -324,18 +324,18 @@ header {
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
-    border: 1px solid var(--accent-text-color); 
     border-radius: 4px;
     line-height: var(--text-line-height);
     font-weight: 500;
     font-size: 16px;
     outline: none;
-    border: 1px solid var(--accent-text-color); 
+    border: 1px solid #9747FF; 
 }
 
 .hero-btn:is(:hover,:focus) {
     background-color: var(--btn-active-color);
     color: var(--primary-white-color);
+    border: 1px solid #9747FF;
 }
 
 
@@ -697,7 +697,9 @@ svg.footer-icon > use {
 
     font-weight: 400;
     font-size: 16px;
-    color: #434455;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
     background-color: var(--btn-active-color);
 }
 
