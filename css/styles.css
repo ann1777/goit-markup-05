@@ -121,10 +121,14 @@ a.active.link {
 }
 
 a.active.link:hover {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--btn-active-color);
 }
 
 a.link:is(:hover, :focus) {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration-line:var(--btn-active-color); 
     color: var(--btn-active-color);  
 }
@@ -221,6 +225,8 @@ header {
 }
 
 .nav:hover, .nav:focus {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--btn-active-color);
 }
 
@@ -414,19 +420,27 @@ li.feature.list:last-child {
 
 .feature-icn-box:hover .feature-icn,
 .feature-icn-box:focus .feature-icn {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
     border-radius: 4px solid var(--accent-text-color);
 }
 
-.feature-icn:is(:hover, :focus) { 
+.feature-icn:is(:hover, :focus) {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     fill: var(--accent-text-color);
 }
-.feature-icn:is(:hover, :focus) { 
+.feature-icn:is(:hover, :focus) {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     fill: var(--accent-text-color);
 }
 
 .feature-icn-box:hover,
 .feature-icn-box:focus {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: 1px solid var(--accent-text-color);
 }
 
@@ -523,6 +537,8 @@ ul.media-icns {
 }
 
 .team-media:is(:hover, :focus) {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--btn-active-color);
     border-color: var(--btn-active-color);
     outline: none;
@@ -562,18 +578,24 @@ ul.media-icns {
 
 .customers-item:hover,
 .customers-item:focus {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
     border: 1px solid var(--btn-active-color);
 }
 
 .customers-card:hover,
 .customers-card:focus {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
     border: 1px solid var(--btn-active-color);
 }
 
 /**CUSTOMERS SECTION ICONS*/
 .customers-item:is(:hover, :focus) > .customers-icon {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--btn-active-color);
 }
 
@@ -656,6 +678,8 @@ svg.footer-icon > use {
 }
 
 .footer-media:is(:hover, :focus) {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--success-color);
     border-color: var(--success-color);
     outline: none;
@@ -760,6 +784,8 @@ svg.footer-icon > use {
 }
 
 .filters:is(:focus, :hover) {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--btn-active-color);
     color: var(--primary-white-color);
 }
@@ -781,6 +807,8 @@ svg.footer-icon > use {
 }
 
 .card-item:hover {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -802,6 +830,8 @@ svg.footer-icon > use {
 }
 
 .card-box:is(:hover, :focus) .card-box {
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 
