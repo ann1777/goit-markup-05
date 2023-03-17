@@ -887,4 +887,6 @@ svg.footer-icon > use {
     top: 0px;
     left:0;
     background: rgba(46, 47, 66, 0.4);
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
