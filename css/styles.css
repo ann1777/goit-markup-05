@@ -206,10 +206,6 @@ header {
     gap: 40px;
 }
 
-.menu-nav > .item:first-child {
-    margin-left: 40px;
-} 
-
 .nav{
     position:relative;
     display:block;
@@ -255,10 +251,6 @@ header {
     line-height: var(--header3-line-height);
     font-style: normal;
     text-decoration: none;
-}
-
-.contacts > .item:not(:first-child) {
-    margin-left: 40px;
 }
 
 /**-------MODAL WINDOW------------*/
