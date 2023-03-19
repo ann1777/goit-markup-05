@@ -130,9 +130,8 @@ a.active.link {
 }
 
 a.active.link:hover {
-    transition: transform 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--btn-active-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /** Hidden header styles*/
@@ -217,10 +216,6 @@ header {
     color: var(--title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .nav:hover, .nav:focus { */
-    /* color: var(--btn-active-color); */
-/* } */
 
 .contacts-nav {
     display:flex;
