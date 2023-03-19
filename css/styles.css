@@ -565,6 +565,7 @@ header {
 
 .customers {
     padding: 120px 0px;
+    align-items: center;
 }
 
 .customers-logos.list { 
@@ -572,22 +573,17 @@ header {
     gap: 24px;
 }
 
-.customers-card {
+.customers-item {
+    align-items: center;
+    justify-content: center; 
     width: 168px;
     height: 88px;
-}
+    display: block;
+    border-radius: 4px;
+    border: 1px solid var(--grey-fill-color);
+    transition: border;
 
-.customers-item {
-  height: 100%;
-  width: 100%;
-  display: block;
-  border-radius: 4px;
-  border: 1px solid var(--grey-fill-color);
-  justify-content: center;
-  align-items: center;
-  transition: border;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 .customers-item:focus,
@@ -600,27 +596,27 @@ header {
 .customers-item > .icon {
     width: 100%;
     height: 100%;
-    fill: var(--helper-text-color);
+    margin: auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
+    display: flex; 
+    margin: auto;
     fill: var(--grey-fill-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-icon:hover{
+.customers-item:hover .customers-icon,
+.customers-item:focus .customers-icon {
   fill: var(--btn-active-color);
   outline: none;
 }
 
-.customers-item:hover .customers-icon{
-    fill: var(--btn-active-color);
+.customers-item:hover, 
+.customers-item:focus {
     outline: none;
-}
-
-.customers-item:focus .customers-icon{
-    fill: var(--btn-active-color);
-    outline: none;
+    border: 1px solid var(--btn-active-color);
 }
 
 /**------------------FOOTER SECTION--------------- */
@@ -763,7 +759,7 @@ header {
 }
 
 .card-item {
-    padding: 32px 16px 32px 0;
+   /*  padding: 32px 16px 32px 0; */
     border-top: none;
     background: var(--primary-white-color);
     transition: box-shadow, color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
