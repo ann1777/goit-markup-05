@@ -579,7 +579,6 @@ header {
     justify-content: center; 
     width: 168px;
     height: 88px;
-    display: block;
     border-radius: 4px;
     border: 1px solid var(--grey-fill-color);
 
