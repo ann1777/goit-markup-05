@@ -574,6 +574,7 @@ header {
 }
 
 .customers-item {
+    display: flex;
     align-items: center;
     justify-content: center; 
     width: 168px;
@@ -581,7 +582,6 @@ header {
     display: block;
     border-radius: 4px;
     border: 1px solid var(--grey-fill-color);
-    transition: border;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
@@ -607,7 +607,11 @@ header {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-item:hover .customers-icon,
+.customers-item:hover .customers-icon{
+    fill: var(--btn-active-color);
+    outline: none;
+}
+
 .customers-item:focus .customers-icon {
   fill: var(--btn-active-color);
   outline: none;
